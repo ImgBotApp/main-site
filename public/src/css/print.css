@@ -1,0 +1,8 @@
+@media print {
+  body {
+    background-color: #ccc;
+    color: #900;
+  }
+}
+
+/*# sourceMappingURL=maps/print.css.map */
