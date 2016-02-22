@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "source": "public/src/",
+    "destination": "public/dist/"
+  },
+  "tinypng" {
+    "key": "" // get key here: https://tinypng.com/developers/subscription
+  }
+}
