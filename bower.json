@@ -1,0 +1,19 @@
+{
+  "name": "johnritterbush.com",
+  "description": "Simple portfolio site",
+  "main": "index.html",
+  "authors": [
+    "John Ritterbush"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "http://johnritterbush.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
