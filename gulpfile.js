@@ -1,6 +1,8 @@
 /* Variables */
 var srcDir = 'public/src',
+    bowerDir = srcDir + '/bower_components',
     sassDir = srcDir + '/scss/**/*.+(scss|sass)',
+    fontAwesomeDir = bowerDir + '/font-awesome',
     jsDir = srcDir + '/js/**/*.js',
     cssDir = srcDir + '/css',
     fontsDir = srcDir + '/fonts/**/*',
@@ -68,7 +70,7 @@ gulp.task('useref', function() {
 // });
 
 gulp.task('fonts', function() {
-  return gulp.src(fontsDir)
+  return gulp.src([fontsDir,fontAwesomeDir+'/fonts/**/*'])
     .pipe(gulp.dest(distDir + '/fonts'));
 });
 
