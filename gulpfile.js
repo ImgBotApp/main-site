@@ -15,7 +15,10 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     del = require('del'),
     runSequence = require('run-sequence'),
-    config = require('./config.json');
+    spellcheck = require('gulp-spellcheck');
+
+/* Config */
+var config = require('./config.json');
 
 /* Directories */
 var source = config.paths.source,
@@ -27,9 +30,9 @@ var bootstrapSass = {
 };
 
 var jquery = {
-  in: [ 
-    bowerPath + 'jquery/dist/jquery.min.js', 
-    bowerPath + 'jquery/dist/jquery.min.map' 
+  in: [
+    bowerPath + 'jquery/dist/jquery.min.js',
+    bowerPath + 'jquery/dist/jquery.min.map'
   ],
   out: dest + 'js/vendor/jquery'
 };
@@ -46,11 +49,16 @@ var json = {
 
 var fonts = {
   in: [
-    bowerPath + 'font-awesome/fonts/*.*', 
+    bowerPath + 'font-awesome/fonts/*.*',
     source + 'fonts/*.*'
   ],
   out: dest + 'fonts'
 };
+
+var content = {
+  in: source + '/content/*.md',
+  out: source + '/content/.spellchecked/'
+}
 
 
 var styles = {
@@ -78,6 +86,13 @@ var options = {
 gulp.task('bower', function() {
   return bower();
 });
+
+
+gulp.task('spellcheck', function() {
+  gulp.src(content.in)
+    .pipe(spellcheck())
+    .pipe(gulp.dest(content.out));
+})
 
 
 gulp.task('css', function() {

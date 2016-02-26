@@ -29,6 +29,10 @@ Many hours in the library with nearly endless research are the backbone for grea
 
 The first couple of real bombs (some still floating around the interwebs as we speak) were hard. I wanted to walk away and give up. I shouldn't be here, I thought. Gradually, though, I realized that those were the real moments to get better at what I do. It definitely seems cliche looking back, but the best learning moments were by far the biggest flops.
 
+#### Inheritance
+
+No, I'm not talking about money here. Inheriting legacy code can be a real drag. You want to jump forward into tomorrow, but yesterday is clinging to the heel of your shoe. This struggle exists in even some of the newest companies out there, but it doesn't have to be all bad. You can learn a lot from progressively enhancing some old JavaScript or converting that CSS jumble into SCSS. It forces you to really consider what you think is the best solution and then apply it more strategically to your existing codebase. But you can still complain while doing it.
+
 
 - - -
 
@@ -82,6 +86,7 @@ Tags: Drupal, PHP, Git, Drush
   * Tags: JavaScript, Node, Bower, Grunt, PhantomJS, CasperJS
 * Freelance: Converted fixed-width Wordpress themes to responsive layout. Improved accessibility on mobile devices and helped pass Google's Mobile Friendly Test.
   * Tags: HTML/CSS, JavaScript, Wordpress, Git, Gulp
+* Playground: Sometimes it's fun just to tinker around. I've recently started playing with FreeCodeCamp to give me some things to work on for fun. Nothing serious, just a place to try out an idea or explore a library/framework for future consideration. Check my codepen.io for some of these: http://codepen.io/jritterbush.
 
 
 - - -
