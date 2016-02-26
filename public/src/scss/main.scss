@@ -3,9 +3,6 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$testing-color: #900;
-$white: #fff;
-
 
 /* GLOBAL STYLES
    -------------------------------------------------- */
@@ -16,65 +13,49 @@ body {
   color: #5a5a5a;
 }
 
-/* CUSTOMIZE THE NAVBAR
-   -------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-
 /* TOP TRUCKING */
-#trucking {
-  height: 600px;
-  margin-bottom: 60px;
-  background-image: url('../images/trucking-2000x1500.jpg');
-  background-position: center 75%;
-  background-size: cover;
-}
+#bighead {
+  margin-bottom: 2rem;
+  background-color: $orange; // Old browsers
+  padding: 0 0 5rem;
+  background: linear-gradient(to top, $orange, $orange_lighter);
+  // background: linear-gradient(to top, $blueish, $blueish_lighter);
 
-/* CUSTOMIZE THE CAROUSEL
-   -------------------------------------------------- */
+  .navbar-wrapper {
+    margin-bottom: 5rem;
+  }
 
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
+  .title-top {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px; 
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
+    h1 {
+      margin: 0 auto 1rem;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 4rem;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      i {
+        display: block;
+        font-size: 10rem;
+      }
+      span {
+        display: block;
+        font-size: 2rem;
+        text-transform: none;
+        font-weight: normal;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      color: $white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+  }
 }
 
 
@@ -114,30 +95,27 @@ body {
    -------------------------------------------------- */
 
 @media (min-width: 768px) {
+  #bighead {
+    .title-top { 
+      width: 600px; 
+    }
+  }
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
+  // .navbar-wrapper .container {
+  //   padding-right: 15px;
+  //   padding-left: 15px;
+  // }
+  // .navbar-wrapper .navbar {
+  //   padding-right: 0;
+  //   padding-left: 0;
+  // }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px;
+    // border-radius: 4px;
   }
 
   /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
 
   .featurette-heading {
     font-size: 50px;
@@ -148,4 +126,5 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+
 }

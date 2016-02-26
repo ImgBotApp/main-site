@@ -1,1 +1,10 @@
 /* Overwrite bootstrap default variables here */
+
+$orange: #ff670f;
+$orange_lighter: #ff9b0f;
+
+$blueish: #336666; 
+$blueish-lighter: lighten($blueish, 5%);
+
+$white: #fff;
+$black: #000;
