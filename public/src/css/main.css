@@ -10481,15 +10481,11 @@ section .section-head h2 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-#summary {
-  background-color: #eeeeee;
-}
-
-#summary .jumbotron {
+.jumbotron {
   margin-bottom: 0;
 }
 
-#summary .jumbotron p {
+.jumbotron p {
   text-align: center;
 }
 
@@ -10511,6 +10507,18 @@ section .section-head h2 {
   padding-bottom: 30px;
 }
 
+#about {
+  text-align: center;
+}
+
+#about .section-head {
+  margin-bottom: 0;
+}
+
+#about .jumbotron {
+  background-color: #fff;
+}
+
 /* Featurettes
    ------------------------- */
 .featurette-divider {
@@ -10528,7 +10536,7 @@ section .section-head h2 {
 /* Footer
    -------------------------------------------------- */
 footer {
-  background-color: #eeeeee;
+  background-color: #222222;
   padding: 20px 0 40px;
 }
 

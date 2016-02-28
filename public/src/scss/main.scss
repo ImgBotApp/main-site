@@ -71,16 +71,12 @@ section {
   }
 }
 
-#summary {
-  background-color: $gray-lighter;
-  .jumbotron {
-    margin-bottom: 0;
-    p {
-      text-align: center;
-    }
+.jumbotron {
+  margin-bottom: 0;
+  p {
+    text-align: center;
   }
 }
-
 
 #skills {
   .skill {
@@ -98,6 +94,14 @@ section {
 
 #projects, #about {
   padding-bottom: 30px;
+}
+
+#about {
+  text-align: center;
+  .section-head { 
+    margin-bottom: 0; 
+  }
+  .jumbotron { background-color: $white; }
 }
 
 
@@ -120,7 +124,7 @@ section {
 /* Footer
    -------------------------------------------------- */
 footer {
-  background-color: $gray-lighter;
+  background-color: $gray-darker;
   padding: 20px 0 40px; 
 }
 
