@@ -6,4 +6,8 @@
   "tinypng" {
     "key": "" // get key here: https://tinypng.com/developers/subscription
   }
+  "faviconData": {
+    "icon": "public/src/favicon/filename.png", // 500x500 png
+    "file": "public/src/favicon/.tmp/faviconData.json"
+  }
 }

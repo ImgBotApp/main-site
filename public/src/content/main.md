@@ -1,37 +1,44 @@
 # John Ritterbush
 
-## Full Stack Developer, UI/UX Consultant
+## Full Stack Developer
+## UI/UX Consultant
 
-I'm a full-stack, web developer currently employed at the Art Institute of Chicago. When I'm not full stacking for them, I do freelance web development and consulting for digital projects.
-
+I'm a web developer currently employed at the Art Institute of Chicago. When I'm not developing webs for them, I do freelance design and development as well as consulting for digital projects.
 
 - - -
 
 ## About
 
-I am a self-taught developer that comes from a background of art and art history. On paper those things seem disconnected, the reality is that the tools I learned in both practices have been critical in my development. My interest in art led me to volunteer my time to improve the website of a local arts education group which is what helped me realize it was something I enjoyed doing.
+I am a self-taught web developer that comes from a background of art and art history. On paper those things seem disconnected, the reality is that the tools I learned in both practices have been critical in my development. It was my interest in art and education that led me to volunteer to improve the website of a local arts center. That time spent led me to a career doing something I love.
 
-Since those early day, I've been adding more skills and knowledge to my personal library and I am always excited to take on a new project that lets me both share that knowledge and pick up even more new tools.
+Since those early day, I continue to add skills and knowledge to my personal library. I am always excited to take on new challenges that let me expand and share that set of tools.
 
-### What I learned along the way from...
+
+### What I have learned from...
 
 #### Art
 
-My artstic background focuses on the lost-wax, bronze-casting technique. This techniques has changed little over the centuries, so knowing the process is where the challenge lies here. Just like a full-stack developer, you need to understand how each step builds on the previous ones. Creating the armature, modeling the clay, making a mold of the piece, creating the wax impression, layering the ceramic shell, melting out the wax, and casting the bronze. All of these steps depend on the previous so if you don't understand the process of one step, you jeopardize the final product. Working in this tradition has helped me as a developer to keep a watchful eye on each step of the process and ensuring that the end result is the best result for the client and their customers.
+My artstic background focuses on the lost-wax, bronze-casting technique. Just like full-stack development each step builds on the previous one. Creating an armature, modeling in clay, making a mold, creating a wax impression, layering ceramic shell, melting the wax, and casting and finishing the bronze. If you don't understand the process and previous steps, you jeopardize the final product. Working in this tradition has taught me to be aware of each step and it's role in the project, ensuring the best result for the client and their customers.
 
 
 #### Art History
 
-Many hours in the library with nearly endless research are the backbone for great art historians. If nothing else, my background in art history has taught me the key elements of research. If you run into a problem in your work, the solution is just a search away. And if that search turns up nothing, you celebrate because you just found your focus and thesis. Even when that result isn't out there, the solution becomes a synthesis of existing ideas to solve your problem. Dedication, time, and a few breaks can lead to great results.
+Hours of research in the library are the backbone for a great art historian, in the same way that hours of online research result in great development. If you run into a problem in your work, the solution is just a search away. And if that search turns up nothing, you celebrate because you just found your focus or thesis. Even when that result isn't out there, the solution becomes a synthesis of existing ideas to solve your problem. Dedication, time, and a few breaks can lead to great results.
 
 
 #### Failure
 
-The first couple of real bombs (some still floating around the interwebs as we speak) were hard. I wanted to walk away and give up. I shouldn't be here, I thought. Gradually, though, I realized that those were the real moments to get better at what I do. It definitely seems cliche looking back, but the best learning moments were by far the biggest flops.
+The first couple of flops (some still floating around the interwebs, as we speak) are hard. Each time I wanted to walk away and give up. Gradually I realized that those were the best moments to learn from. Now I embrace the mistakes and let them educate my next steps.
 
 #### Inheritance
 
-No, I'm not talking about money here. Inheriting legacy code can be a real drag. You want to jump forward into tomorrow, but yesterday is clinging to the heel of your shoe. This struggle exists in even some of the newest companies out there, but it doesn't have to be all bad. You can learn a lot from progressively enhancing some old JavaScript or converting that CSS jumble into SCSS. It forces you to really consider what you think is the best solution and then apply it more strategically to your existing codebase. But you can still complain while doing it.
+Inheriting legacy code can be a real drag. We all want to jump forward into tomorrow, but yesterday is clinging to the heel of our shoe. This struggle doesn't have to be all bad. I have learned a lot from progressively enhancing some old JavaScript or converting that CSS jumble into SCSS. This process forced me to consider what is best and then apply it strategically to my enhancements. That said, we still get to complain while doing it.
+
+### Goals 
+
+* Responsive Design
+* Accessibility
+* SEO/SEM
 
 
 - - -
@@ -94,35 +101,49 @@ Tags: Drupal, PHP, Git, Drush
 
 ## Skills
 
-### Front-End
-* HTML5
-* CSS3
-* Semantic Mark-up
+### HTML5 
 
-### CMS/CMF
+I make it a priority to write semantic markup which not only improves accessibility and findability, but also makes for more future-friendly code.
 
-* Wordpress
-* Drupal
+### CSS3
 
-### Back-End Languages
+Using CSS to improve layout and animations helps minimize the need for JavaScript.
 
-* PHP
-* Ruby
+### CSS Precompilers
+
+I am familiar with LESS and SASS preprocessing as well as using tools like Autoprefixer to make CSS compatiable with as many browsers as possible.
+
+### CMS/CMF 
+
+I have worked with a variety of content management systems and frameworks. The bulk of that work revolves around Drupal and Wordpress.
+
+### JavaScript
+
+I have focused lately on vanilla JavaScript for front-end scripting, but also integrating tools like jQuery and underscore, MV* frameworks like AngularJS and Backbone, and templating tools like Mustache and dōmo.
+
+### Automation
+
+Tools like Vagrant and Ansible for server automation plus scripting automation from NPM, Bower, Gulp, and Grunt, have made continuous deployment much less of a chore. I use these tools every chance I get.
+
+### Server-Side Languages 
+
+I maintain and develop projects mainly in PHP and Ruby, but have also worked on small projects with ASP and Python.
 
 ### Databases
 
-* MySQL
-* SQL
+My primary database of choice has been MySQL for ease-of-use and compatibility, but have worked with Microsoft SQL and NoSQL databases like RethinkDB.
 
-### Focuses
-
-* Responsive Design
-* Accessibility
-* SEO/SEM
 
 - - -
 
 ## Footer
+
+### Social Media
+
+Facebook: https://www.facebook.com/john.ritterbush
+Twitter: https://twitter.com/JohnRitterbush
+Instagram: https://twitter.com/johnritterbush
+LinkedIn: https://www.linkedin.com/in/johnritterbush
 
 ### Contact form
 
