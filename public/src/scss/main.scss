@@ -9,20 +9,32 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
 }
 
+section {
+  .section-head {
+    background-color: $brand-primary;
+    margin-bottom: 30px;
+    h2 {
+      color: $white;
+      text-align: center;
+    }
+  }
+}
+
+
 /* TOP TRUCKING */
 #bighead {
-  margin-bottom: 2rem;
   background-color: $orange; // Old browsers
   padding: 0 0 5rem;
   background: linear-gradient(to top, $orange, $orange_lighter);
-  // background: linear-gradient(to top, $blueish, $blueish_lighter);
 
   .navbar-wrapper {
     margin-bottom: 5rem;
+    .navbar-brand {
+      font-family: $font-family-serif;
+    }
   }
 
   .title-top {
@@ -34,18 +46,19 @@ body {
     h1 {
       margin: 0 auto 1rem;
       color: $white;
-      text-transform: uppercase;
-      font-size: 4rem;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-      i {
-        display: block;
-        font-size: 10rem;
-      }
+      font-size: 5.5rem;
+      line-height: 6rem;
       span {
         display: block;
         font-size: 2rem;
         text-transform: none;
         font-weight: normal;
+        font-family: $font-family-sans-serif;
+        i {
+          font-size: 0.75em;
+          line-height: 1em;
+          vertical-align: 10%;
+        }
       }
     }
 
@@ -58,22 +71,35 @@ body {
   }
 }
 
+#summary {
+  background-color: $gray-lighter;
+  .jumbotron {
+    margin-bottom: 0;
+    p {
+      text-align: center;
+    }
+  }
+}
 
-/* MARKETING CONTENT
-   -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+#skills {
+  .skill {
+    margin-bottom: 20px;
+    text-align: center;
+    h3 {
+      font-weight: normal;
+    }
+    p {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
 }
-.marketing h2 {
-  font-weight: normal;
+
+#projects, #about {
+  padding-bottom: 30px;
 }
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
+
 
 
 /* Featurettes
@@ -91,6 +117,13 @@ body {
 }
 
 
+/* Footer
+   -------------------------------------------------- */
+footer {
+  background-color: $gray-lighter;
+  padding: 20px 0 40px; 
+}
+
 /* RESPONSIVE CSS
    -------------------------------------------------- */
 
@@ -100,25 +133,9 @@ body {
       width: 600px; 
     }
   }
-  /* Navbar positioning foo */
-  // .navbar-wrapper .container {
-  //   padding-right: 15px;
-  //   padding-left: 15px;
-  // }
-  // .navbar-wrapper .navbar {
-  //   padding-right: 0;
-  //   padding-left: 0;
-  // }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    // border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
 
   .featurette-heading {
-    font-size: 50px;
+    font-size: 2em;
   }
 }
 

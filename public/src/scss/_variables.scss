@@ -1,12 +1,54 @@
-/* Overwrite bootstrap default variables here */
+//
+// Custom Variables - JohnRitterbush.com
+// --------------------------------------------------
 
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
 $orange: #ff670f;
 $orange_lighter: #ff9b0f;
 
-$blueish: #336666; 
-$blueish-lighter: lighten($blueish, 5%);
+$brand-primary:         $orange;
+// $brand-success:         #5cb85c !default;
+// $brand-info:            #5bc0de !default;
+// $brand-warning:         #f0ad4e !default;
+// $brand-danger:          #d9534f !default;
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 $white: #fff;
 $black: #000;
 
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@import url(https://fonts.googleapis.com/css?family=Arbutus+Slab);
+
 $font-size-base: 16px;
+
+$font-family-serif: 'Arbutus Slab', serif;
+$headings-font-family: $font-family-serif;
+
+
+
+//== Navbar
+//
+//##
+
+$navbar-default-bg:                $gray-lighter;
+// $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
+// Navbar links
+// $navbar-default-link-color:                $white;
+// $navbar-default-link-hover-color:          #333 !default;
+// $navbar-default-link-hover-bg:             transparent !default;
+// $navbar-default-link-active-color:         #555 !default;
+// $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;
