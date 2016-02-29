@@ -3,7 +3,7 @@
 ## Full Stack Developer
 ## UI/UX Consultant
 
-I'm a web developer currently employed at the Art Institute of Chicago. When I'm not developing webs for them, I do freelance design and development as well as consulting for digital projects.
+> I'm a web developer currently employed at the Art Institute of Chicago. When I'm not developing webs for them, I do freelance design and development as well as consulting for digital projects.
 
 - - -
 

@@ -18,7 +18,8 @@ var gulp = require('gulp'),
     del = require('del'),
     runSequence = require('run-sequence'),
     realFavicon = require ('gulp-real-favicon'),
-    spellcheck = require('gulp-spellcheck');
+    spellcheck = require('gulp-spellcheck'),
+    markdown = require('gulp-markdown');
 
 /* Config */
 var config = require('./config.json');
@@ -60,6 +61,7 @@ var fonts = {
 
 var content = {
   in: source + '/content/*.md',
+  tmpOut: dest + '/content/.tmp',
   out: source + '/content/.spellchecked/'
 }
 
@@ -133,6 +135,11 @@ gulp.task('bower', function() {
   return bower();
 });
 
+gulp.task('content', function() {
+  return gulp.src(content.in)
+    .pipe(markdown())
+    .pipe(gulp.dest(content.tmpOut));
+});
 
 gulp.task('spellcheck', function() {
   gulp.src(content.in)
