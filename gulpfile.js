@@ -19,7 +19,8 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     realFavicon = require ('gulp-real-favicon'),
     spellcheck = require('gulp-spellcheck'),
-    markdown = require('gulp-markdown');
+    markdown = require('gulp-markdown'),
+    rsync = require('gulp-rsync');
 
 /* Config */
 var config = require('./config.json');
@@ -42,7 +43,7 @@ var jquery = {
 };
 
 var images = {
-  in: source + '/images/**/*.+(png|jpg|gif|svg)',
+  in: source + 'images/**/*.+(png|jpg|gif|svg)',
   out: dest + 'images'
 }
 
@@ -60,16 +61,16 @@ var fonts = {
 };
 
 var content = {
-  in: source + '/content/*.md',
-  tmpOut: dest + '/content/.tmp',
-  out: source + '/content/.spellchecked/'
+  in: source + 'content/*.md',
+  tmpOut: dest + 'content/.tmp',
+  out: source + 'content/.spellchecked/'
 }
 
 
 var styles = {
-  in: source + '/scss/main.scss',
-  srcOut: source + '/css',
-  destOut: dest + '/css',
+  in: source + 'scss/main.scss',
+  srcOut: source + 'css',
+  destOut: dest + 'css',
   watch: source + 'scss/**/*',
   sassOpts: {
     errLogToConsole: true,
@@ -206,7 +207,7 @@ gulp.task('check-for-favicon-update', function(done) {
 
 
 gulp.task('useref', function() {
-  return gulp.src(source + '/*.html')
+  return gulp.src(source + '*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
@@ -238,10 +239,17 @@ gulp.task('clear', function(done) {
   return cache.clearAll(done);
 });
 
+var conf = require('./config').rsync;
+gulp.task('rsync', function() {
+  return gulp.src(conf.src)
+    .pipe(rsync(conf.options));
+});
+
 
 gulp.task('watch', function() {
   gulp.watch(styles.watch, ['css']);
   gulp.watch(json.in, ['json']);
+  gulp.watch(source + 'js/**/*.js', ['useref']);
   gulp.watch(source + '*.html', ['useref'])
 });
 
@@ -251,7 +259,10 @@ gulp.task('default', function(callback) {
     'clean:dist',
     ['css', 'jquery', 'json'],
     ['useref', 'images', 'fonts'],
+    ['generate-favicon', 'inject-favicon-markups'],
     'watch',
     callback
   );
 });
+
+gulp.task('deploy', ['rsync']);

@@ -16,3 +16,7 @@ public/dist
 
 # Config
 config.json
+config.js
+
+# PHP tools for now
+public/src/php
