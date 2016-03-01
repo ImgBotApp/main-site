@@ -1,0 +1,29 @@
+- var section = sections.projects
+section#projects
+
+  .section-head
+    .container
+      h2= section.altTitle 
+
+  .container
+    each item, index in section.items
+      .row.featurette
+        div(class= item.styles.col1)
+          h2.featurette-heading= item.title 
+            span.text-muted= item.subTitle
+          p.lead= item.summary 
+            if item.link
+              a(href="#{item.link.url}", title="#{item.link.title}")= item.link.text
+                i.fa.fa-chevron-right
+
+          p.tags
+            each tag in item.tags
+              span.label.label-default= tag
+
+        div(class= item.styles.col2)
+          img.featurette-image.img-responsive.center-block(src="#{item.image.src}", alt="#{item.image.alt}")
+
+      unless index == section.items.length - 1
+        hr.featurette-divider
+
+  include ./_projects-additional.jade

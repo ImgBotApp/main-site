@@ -1,0 +1,24 @@
+- var section = sections.about
+section#about
+
+  .section-head
+    .container
+      h2=section.name
+
+  .jumbotron
+
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          each p in section.summary
+            p= p
+
+  .container
+
+    h3= section.learnings.title
+
+    .row
+      each item in section.learnings.items
+        .col-md-4.learning
+          h4= item.title
+          p= item.description 

@@ -1,0 +1,327 @@
+{
+  "author": "John Ritterbush",
+  "title": "John Ritterbush - Web Developer and UI/UX Consultant",
+  "summary": "I'm a web developer currently working as part of the Digital Marketing team at the Art Institute of Chicago. As a freelancer, I’ve done design, development, and digital project consulting for the Fire Arts Center of Chicago, Wicker Park Choral Singers, and Ringspann Corporation.",
+  "image": "http://johnritterbush.com/images/projects--johnritterbush-responsive.jpg",
+  "tags": [
+    "Full Stack Developer",
+    "UI/UX Consultant"
+  ],
+  "sections": { 
+
+    "projects": {
+      "name": "Projects",
+      "altTitle": "Featured Projects",
+      "in_nav": true ,
+      "items": [
+
+        {
+          "title": "JohnRitterbush.com.",
+          "subTitle": "var self = this;",
+          "styles": {
+            "col1": "col-md-5",
+            "col2": "col-md-7" 
+          },
+          "summary": "This site is a testament to the full-stack nature of how I work. It starts with Vagrant and Ansible for local development and provisioning for the staging/production servers. Add in npm/bower/gulp to automate the build of the site, including styles generated using SCSS with dependencies on Bootstrap. All wrapped neatly in version-controlled repositories for the server and the site itself. From zero to full site in a few commands.",
+          "link": {
+            "url": "https://github.com/jritterbush/main-site",
+            "title": "Leaving johnritterbush.com for github.com",
+            "text": "View the GitHub repository" 
+          },
+          "tags": [ "HTML/CSS", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Ansible", "Vagrant", "Gulp", "Git", "Node", "Bower" ],
+          "image": {
+            "src": "images/projects--johnritterbush-responsive.jpg", 
+            "alt": "Examples of responsive layout for Van Gogh's Bedrooms AngularJS quiz"
+          }
+        },
+
+        {
+          "title": "Van Gogh's Bedrooms.",
+          "subTitle": "Promotional Site.",
+          "styles": {
+            "col1": "col-md-5 col-md-push-7",
+            "col2": "col-md-7 col-md-pull-5"
+          },
+          "summary": "The site was created to pique interest in the exhibition <em>Van Gogh&rsquo;s Bedrooms </em>for the Art Institute of Chicago. The marketing team needed landing pages to complement the ad campaign around the city and also a place for visitors to go and see materials they may have missed during their visit. We combined style guides from the marketing campaign with digital and print assets in the exhibition, to provide the visitor with an online resource that reflected their experience at the museum.",
+          "link": {
+            "url": "http://extras.artic.edu/van-gogh-bedrooms",
+            "text": "Visit the site"
+          },
+          "tags": [ "HTML/CSS", "SCSS", "JavaScript", "Foundation" ],
+          "image": {
+            "src": "images/projects--van-gogh-bedrooms-responsive.jpg", 
+            "alt": "Examples of responsive layout for Van Gogh's Bedrooms chair page"
+          }
+        },
+        
+        {
+          "title": "Van Gogh's Bedrooms.",
+          "subTitle": "AngularJS Quiz.",
+          "styles": {
+            "col1": "col-md-5",
+            "col2": "col-md-7" 
+          },
+          "summary": "A complement to the <em>Van Gogh&rsquo;s Bedroom</em> website, this quiz lets visitors test their knowledge of Van Gogh in pop culture. They can share their results on social media, garnering more interest and potential visitors to the exhibition.",
+          "link": {
+            "url": "http://extras.artic.edu/van-gogh-bedrooms/quiz",
+            "text": "Visit the site" 
+          },
+          "tags":[ "HTML/CSS", "SCSS", "JavaScript", "Foundation", "AngularJS" ],
+          "image": {
+            "src": "images/projects--vangoghbedrooms-quiz-responsive.jpg", 
+            "alt": "Examples of responsive layout for Van Gogh's Bedrooms AngularJS quiz"
+          }
+        },
+
+        {
+          "title": "Find your #ArtThrob.",
+          "subTitle": "Custom JavaScript Quiz.",
+          "styles": {
+            "col1": "col-md-5 col-md-push-7",
+            "col2": "col-md-7 col-md-pull-5"
+          },
+          "summary": "As a Valentine&rsquo;s Day social media promotion, I collaborated with the social media manager to create a Buzzfeed-style quiz that would use the answers to identify a visitor's ideal love interest. It was a fun way for the museum to engage with its social media followers who could take the quiz and then share with their friends.",
+          "link": {
+            "url": "http://extras.artic.edu/art-throb",
+            "text": "Visit the site" 
+          },
+          "tags": [ "HTML/CSS", "JavaScript", "Foundation" ],
+          "image": {
+            "src": "images/projects--art-throb-responsive.jpg", 
+            "alt": "Examples of responsive layout for Who's Your ArtThrob quiz"
+          }
+        },
+
+        {
+          "title": "Visit Art Institute.",
+          "subTitle": "Tourism marketing site.",
+          "styles": {
+            "col1": "col-md-5",
+            "col2": "col-md-7" 
+          },
+          "summary": "Working with the marketing and tourism department, I developed a site that provided a quick way to create an ad campaign for digital ads. When the marketing team came up with a concept, e.g. &ldquo;Playing Hooky&rdquo;, we could build a data file with the text and images as well as a stylesheet to customize any colors or elements and then quickly build and plug the new page into the tourism main site. It allowed for very agile promotions that could come and go based on seasons or special offers, yet still maintain a consistent feel with the other offers.",
+          "link": {
+            "url": "http://visitartinstitute.com",
+            "text": "Visit the site" 
+          },
+          "tags": [ "Ruby", "Nanoc", "JavaScript", "Foundation" ],
+          "image": {
+            "src": "images/projects--visitartinstitute-responsive.jpg", 
+            "alt": "Screenshot of visitartinstitute.com"
+          }
+        },
+
+        {
+          "title": "Drupal Updates.",
+          "subTitle": "Zzzzzzzzzz.",
+          "styles": {
+            "col1": "col-md-5 col-md-push-7",
+            "col2": "col-md-7 col-md-pull-5"
+          },
+          "summary": "While not as exciting as the other items on the list, making sure the latest security patches are applied to a site running on Drupal is critical. I stay tuned into the Drupal updates to ensure the latest and greatest is always running. Also important in this process is to talk to the content producers to find out which areas of the admin need feature enhancements and bug fixes.",
+          "tags": [ "Drupal", "PHP", "Git", "Drush" ],
+          "image": {
+            "src": "images/projects--SecurityAdvisories-Drupal.jpg", 
+            "alt": "Screenshot of Drupal security updates page"
+          }
+        }
+
+      ],
+
+      "additionalProjects": {
+        "title": "Additional Projects",
+        "items": [
+
+          {
+            "title": "Site Testing",
+            "summary": "Using a local server running PhantomJS and CasperJS, I built out tests for various sections of our site to ensure updates to the code or database didn't break functionality. Tests run on local development, staging and production servers to check at all levels of deployment.",
+            "tags": [ "JavaScript", "Node", "Bower", "Grunt", "PhantomJS", "CasperJS" ]
+          },
+
+          {
+            "title": "Freelance",
+            "summary": "Converted fixed-width Wordpress themes to responsive layout. Improved accessibility on mobile devices and helped pass Google's Mobile Friendly Test.",
+            "tags": [ "JavaScript", "HTML/CSS", "Wordpress", "Git", "Gulp" ]
+          },
+
+          {
+            "title": "Playground",
+            "summary": "Sometimes it's fun just to tinker around. I use FreeCodeCamp and CodePen as a way to test my skills and try some new tools as well as quiz myself on some basic knowledge. CodePen is also a great way to try out an idea or explore a library/framework for future use.",
+            "link": {
+              "url": "http://codepen.io/jritterbush",
+              "text": "Visit my CodePen for examples"
+            },
+            "tags": [ "HTML/CSS", "SCSS", "JavaScript", "Foundation" ]
+          }
+
+        ]
+      }
+    },
+
+    "skills": {
+      "name": "Skills",
+      "in_nav": true,
+      "items": [
+
+        {
+          "icon": "html5",
+          "title": "HTML5",
+          "summary": "I make it a priority to write semantic markup which not only improves accessibility and findability, but also makes for more future-friendly code."
+        },
+
+        {
+          "icon": "css3",
+          "title": "CSS3",
+          "summary": "Using CSS to improve layout and animations helps minimize the need for JavaScript."
+        },
+
+        {
+          "icon": "cogs",
+          "title": "CSS Precompilers",
+          "summary": "I am familiar with LESS and SASS preprocessing as well as using tools like Autoprefixer to make CSS compatiable with as many browsers as possible."
+        },
+
+        {
+          "icon": "drupal",
+          "title": "CMS/CMF",
+          "summary": "I have worked with a variety of content management systems and frameworks. The bulk of that work revolves around Drupal and Wordpress."
+        },
+
+        {
+          "icon": "code",
+          "title": "JavaScript",
+          "summary": "I have focused lately on vanilla JavaScript for front-end scripting, but also integrating tools like jQuery and underscore, MV* frameworks like AngularJS and Backbone, and templating tools like Mustache and dōmo."
+        },
+
+        {
+          "icon": "magic",
+          "title": "Automation",
+          "summary": "Tools like Vagrant and Ansible for server automation plus scripting automation from NPM, Bower, Gulp, and Grunt, have made continuous deployment much less of a chore. I use these tools every chance I get."
+
+        },
+
+        {
+          "icon": "server",
+          "title": "Server-Side Languages",
+          "summary": "I maintain and develop projects mainly in PHP and Ruby, but have also worked on small projects with ASP and Python."
+        },
+
+        {
+          "icon": "database",
+          "title": "Databases",
+          "summary": "My primary database of choice has been MySQL for ease-of-use and compatibility, but have worked with Microsoft SQL and NoSQL databases like RethinkDB."
+        }
+
+      ]
+    },
+
+    "experience": {
+      "name": "Experience",
+      "in_nav": false,
+      "jobs": [
+
+        {
+          "company": "The Art Institute of Chicago",
+          "title": "Web Architect",
+          "dates": "October 2013&ndash;present",
+          "summary": "In the digital marketing department, I serve as web architect. In that role, I have improved revenue tracking across three separate sales channels in Google Analytics, brought our Drupal development in-house saving money and time, converted email campaigns to responsive templates, and developed promotional sites for marketing campaigns."
+        },
+
+        {
+          "company": "WTTW/WFMT",
+          "title": "Web Developer",
+          "dates": "August 2008&ndash;August 2013",
+          "summary": "As a web developer in the marketing department, I oversaw the migration from a proprietary CMS to Drupal, coordinated the launch of a new sales channel, assisted in the development of several promotional email campaigns, and maintained and developed content to supplement on-air programming."
+        },
+
+        {
+          "company": "Nimlok Company",
+          "title": "Webmaster",
+          "dates": "January 2007&ndash;August 2008",
+          "summary": "In the role of webmaster at Nimlok company I was tasked with a wide variety of jobs. Primarily I maintained over 85 websites for the US main office and its distributors. I also created email templates for a variety of customer and distributor communications."
+        },
+
+        {
+          "company": "Freelance",
+          "title": "Web Developer/Designer",
+          "dates": "May 2005&ndash;present",
+          "summary": "As a freelance developer, I have worked for a variety of clients ranging from local arts groups to international, industrial manufacturing equipment sales. I develop Wordpress sites, improve search engine optimization, convert fixed-width websites to responsive, and provide an expert voice on digital projects."
+        }
+
+      ]
+    },
+
+    "about": {
+      "name": "About",
+      "in_nav": true,
+      "summary": [
+        "I am a self-taught web developer with a background in art and art history. On paper those things seem disconnected, but the knowledge I gained in both practices have been critical in my development. My interest in art and education led me to volunteer my time to improve the website of a local arts center. In return, that experience led me to pursue web development, a career I have found equal fulfillment in.",
+        "Since then I have continued the ongoing process of learning and have built a personal library of development knowledge. I am always excited to take on new challenges that let me expand and share that set of tools."
+      ],
+      "learnings": {
+        "title": "What I have learned from...",
+        "items": [
+          {
+            "title": "Art",
+            "description": "My fine art practice focused on the lost-wax, bronze-casting technique. Similar to web development each step builds on the previous one—from creating a clay model to finishing the bronze—if you don't understand all the steps in the process, you jeopardize the final product. Working in this tradition taught me to be aware of each action and its role in the project, ensuring the best result for the client and their customers."
+          },
+          {
+            "title": "Art History",
+            "description": "Hours of research are the backbone for a great art historian, in the same way that hours of online research result in great development. If you run into a problem in your work, the solution is just a search away. And if that search turns up nothing, you celebrate because you just found your focus or thesis. Even when the result isn't out there yet, the solution becomes a synthesis of existing ideas to solve your problem. Dedication, time, and a few breaks can lead to great results."
+          },
+          {
+            "title": "Failure",
+            "description": "The first couple of flops (some still floating around the interwebs) are hard. Each time I wanted to walk away and give up but I soon realized that those were the best moments to learn from. Now I embrace mistakes and let them educate each subsequent project."
+          }
+        ]
+      }
+        
+    },
+
+    "contact": {
+      "name": "Contact",
+      "in_nav": true
+    }
+  },
+  "social": {
+    "title": "Find Me On",
+    "items": [
+      {
+        "id": "linkedin",
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/johnritterbush"
+      },
+
+      {
+        "id": "github",
+        "title": "GitHub",
+        "url": "https://github.com/jritterbush" 
+      },
+
+      {
+        "id": "codepen",
+        "title": "CodePen",
+        "url": "http://codepen.io/jritterbush"
+      },
+
+
+      {
+        "id": "twitter",
+        "title": "Twitter",
+        "url": "https://twitter.com/johnritterbush"
+      },
+
+      {
+        "id": "facebook",
+        "title": "Facebook",
+        "url": "https://www.facebook.com/john.ritterbush"
+      },
+
+      {
+        "id": "instagram",
+        "title": "Instagram",
+        "url": "https://www.instagram.com/johnvritterbush"
+      }
+    ]
+  }
+}

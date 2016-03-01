@@ -1,0 +1,20 @@
+- var section = sections.skills
+section#skills
+
+  .section-head
+    .container
+      h2= section.title 
+
+  .container
+
+    .row
+      each skill,index in section.items
+
+        if index % 2 == 0
+          .clearfix.visible-sm-block
+        if index % 4 == 0
+          .clearfix.visible-md-block
+        .col-sm-6.col-md-3.col-lg-3.skill
+          i(class="fa fa-#{skill.icon} fa-4x")
+          h3= skill.title
+          p= skill.summary

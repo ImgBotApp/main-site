@@ -1,0 +1,17 @@
+- var section = sections.projects.additionalProjects
+.additional-features
+  .container
+    h3= section.title 
+    .row
+      each item in section.items
+        .col-md-4.added-feature
+          .well
+            h4= item.title 
+            p= item.summary 
+              if item.link
+                a(href="#{item.link.url}")  #{item.link.text}
+                  i.fa.fa-chevron-right
+            
+            p.tags
+              each tag in item.tags
+                span.label.label-default= tag 

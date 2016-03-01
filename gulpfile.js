@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
+    data = require('gulp-data'),
     jade = require('gulp-jade'),
     useref = require('gulp-useref'),
     gulpIf = require('gulp-if'),
@@ -24,6 +25,10 @@ var gulp = require('gulp'),
 
 /* Config */
 var config = require('./config.json');
+
+/* Environment vars */
+
+var env = process.env.NODE_ENV;
 
 /* Directories */
 var source = config.paths.source,
@@ -130,6 +135,17 @@ var options = {
     browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
   }
 }
+
+gulp.task('jade', function() {
+  return gulp.src('src/templates/**/!(_)*.jade')
+    .pipe(data(function(file) {
+      return require('./src/data/site.json');
+    }))
+    .pipe(jade({
+      pretty: true  
+    }))
+    .pipe(gulp.dest('builds/development/'));
+});
 
 
 gulp.task('bower', function() {

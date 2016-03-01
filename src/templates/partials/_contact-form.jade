@@ -1,0 +1,37 @@
+.row
+  .col-sm-2
+    img.img-responsive(src="android-chrome-144x144.png", alt="logo for JR")
+  .col-sm-10
+    h3 Contact Me
+    p I’m always looking for a new challenge. Have one for me? I’m available for freelance development or consulting. Send me a message:
+form#contactForm(role="form")
+  .row
+    .form-group.col-sm-6
+      label.h4(for="contactName") Name
+      input#contactName.form-control(
+        type="text"
+        placeholder="Enter your name"
+        required
+      )
+      div.help-block.with-errors
+
+    .form-group.col-sm-6
+      label.h4(for="contactEmail") Email
+      input#contactEmail.form-control(
+        type="email",
+        placeholder="Enter your email" 
+        required
+      )
+      .help-block.with-errors
+
+  .form-group
+    label.h4(for="contactMessage") Message
+    textarea#contactMessage.form-control(
+      rows="5"
+      placeholder="Enter your message"
+      required
+    )
+    .help-block.with-errors
+
+  button#contactSubmit.btn.btn-primary.btn-lg.pull-right(type="submit") Submit
+  #submitStatus.h3.text-center.hidden

@@ -1,0 +1,31 @@
+footer#contact
+  .container
+    .row
+      // .col-md-8.clearfix
+        // include ./_contact-form.jade
+      .col-md-4.col-md-offset-4.social-icons
+        h3= social.title
+        .row
+
+          each item in social.items
+            - var icon = item.title.toLowerCase()
+            .col-xs-4.social-icon
+              a.btn.btn-default(title="#{author} on #{item.title}", href="#{item.url}")
+                i(class="fa fa-#{item.id} fa-2x") 
+                span= item.title
+
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+script.
+  window.jQuery || document.write('<script src="/js/vendor/jquery/jquery.min.js"><\/script>')
+
+// build:js js/bootstrap.min.js
+script(src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js")
+script(src="bower_components/bootstrap-validator/dist/validator.js")
+// endbuild
+
+// build:js js/main.min.js
+script(
+  type="text/javascript" 
+  src="js/main.js"
+)
+// endbuild

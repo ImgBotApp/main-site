@@ -1,0 +1,21 @@
+- var section = sections.experience
+section#experience
+
+  .section-head
+    .container
+      h2=section.name
+
+  .container
+
+    .row
+      each job in section.jobs
+        .col-sm-6.exp-item
+          h3= job.company
+          h4= job.title
+          p
+            strong= job.dates
+          p= job.summary
+
+    p.read-more Read more about my experience 
+      a(href="https://www.linkedin.com/in/johnritterbush", title="Click to leave johnritterbush.com for linkedin.com") on my LinkedIn page
+      |.
