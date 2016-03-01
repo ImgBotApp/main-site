@@ -10529,8 +10529,26 @@ section .section-head h2 {
   margin-left: 10px;
 }
 
+#experience {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#experience .exp-item h3 {
+  margin-bottom: 0;
+}
+
+#experience .exp-item h4 {
+  margin: 5px 0;
+}
+
+#experience .read-more {
+  padding-top: 30px;
+}
+
 #about {
   text-align: center;
+  padding-bottom: 30px;
 }
 
 #about .section-head {
@@ -10539,16 +10557,6 @@ section .section-head h2 {
 
 #about .jumbotron {
   background-color: #fff;
-}
-
-#about .experience {
-  background-color: #eeeeee;
-  padding-bottom: 30px;
-}
-
-#about .experience .read-more {
-  padding-top: 20px;
-  margin-top: 20px;
 }
 
 /* Featurettes

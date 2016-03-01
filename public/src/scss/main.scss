@@ -116,20 +116,25 @@ section {
   }
 }
 
+#experience {
+  padding-bottom: 30px;
+  text-align: center;
+  .exp-item {
+    h3 { margin-bottom: 0; }
+    h4 { margin: 5px 0; }
+  }
+  .read-more {
+    padding-top: 30px;
+  }
+}
+
 #about {
   text-align: center;
+  padding-bottom: 30px;
   .section-head { 
     margin-bottom: 0; 
   }
   .jumbotron { background-color: $white; }
-  .experience {
-    background-color: $gray-lighter;
-    padding-bottom: 30px;
-    .read-more {
-      padding-top: 20px;
-      margin-top: 20px;
-    }
-  }
 }
 
 

@@ -10,6 +10,7 @@ bower_components
 # Temp directories
 public/src/content/.spellchecked
 .tmp
+.gulp
 
 # Dist
 public/dist
