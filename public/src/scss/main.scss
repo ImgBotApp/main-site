@@ -117,12 +117,19 @@ section {
 }
 
 #about {
-  padding-bottom: 30px;
   text-align: center;
   .section-head { 
     margin-bottom: 0; 
   }
   .jumbotron { background-color: $white; }
+  .experience {
+    background-color: $gray-lighter;
+    padding-bottom: 30px;
+    .read-more {
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+  }
 }
 
 

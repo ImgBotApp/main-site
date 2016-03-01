@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Arbutus+Slab);
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -10531,7 +10530,6 @@ section .section-head h2 {
 }
 
 #about {
-  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -10541,6 +10539,16 @@ section .section-head h2 {
 
 #about .jumbotron {
   background-color: #fff;
+}
+
+#about .experience {
+  background-color: #eeeeee;
+  padding-bottom: 30px;
+}
+
+#about .experience .read-more {
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* Featurettes
