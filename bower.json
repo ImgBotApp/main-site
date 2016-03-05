@@ -13,6 +13,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
+    "_bower_components",
     "test",
     "tests"
   ],

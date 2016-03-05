@@ -6,6 +6,7 @@ npm-debug.log*
 # Dependency directories
 node_modules
 bower_components
+_bower_components
 
 # Temp directories
 public/src/content/.spellchecked
@@ -14,11 +15,13 @@ public/src/content/.spellchecked
 
 # Dist
 public/dist
-builds
+build
 
 # Config
-config.json
-config.js
+safe-words.json
 
 # PHP tools for now
 public/src/php
+
+# Random copy of old gulpfile
+gulpfile-old.js
