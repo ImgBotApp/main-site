@@ -3,12 +3,22 @@ var gulp        = require('gulp'),
 
 gulp.task('build', function(callback) {
   runSequence(
-    'bower',
     'delete',
     'jade',
-    [ 'sass', 'sassLint' ],
-    // [ 'scripts' ],
-    [  'images', 'copy:fonts' ],
+    [ 
+      'sass',
+      'sassLint'
+    ],
+    'jshint',
+    'scripts',
+    [
+      'images',
+      'copy:fonts'
+    ],
+    [
+      'generateFavicon',
+      'injectFaviconMarkups'
+    ],
     callback
   );
 });

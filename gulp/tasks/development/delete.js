@@ -1,9 +1,11 @@
+var config = require('../../config').delete;
+
 var gulp   = require('gulp'),
     del    = require('del'),
-    config = require('../../config').delete;
+    util   = require('gulp-util');
 
 gulp.task('delete', function() {
   del(config.src).then(paths => {
-    console.log('Deleted files and folders:\n', paths.join('\n'));
+    util.log('Deleted files and folders:\n\t', util.colors.yellow(paths.join('\n\t')));
   });
 });

@@ -36,6 +36,9 @@ module.exports = {
       '!' + development
     ]
   },
+  json: {
+    src: [ srcAssets + '/data/**/*.json' ]
+  },
   html: {
     development: { 
       src:  src + '/_templates/**/!(_)*.jade',
@@ -76,23 +79,73 @@ module.exports = {
       'Firefox ESR'
     ]
   },
-  js: {
-    src: src + '/js/**/*.js'
+  scripts: {
+    src: srcAssets + '/js/*.js',
+    dest: developmentAssets + '/js',
+    bowerScripts: {
+      src: [
+        bowerPath + '/**/*.js',
+        '!' + bowerPath + '/**/gulpfile.js'
+      ],
+      dest: developmentAssets + '/bower_components'
+    }  
   },
   images: {
     src: srcAssets + '/images/**/*',
     dest: developmentAssets + '/images'
   },
   favicon: {
-    src: src + '/favicon/*-favicon.png',
-    file: src + '/favicon/.faviconData.json'
+    options: {
+      masterPicture: srcAssets + '/favicon/JohnRitterbush-favicon.png',
+      dest: development,
+      iconsPath: '/',
+      design: {
+        ios: {
+          pictureAspect: 'noChange'
+        },
+        desktopBrowser: {},
+        windows: {
+          pictureAspect: 'noChange',
+          backgroundColor: '#da532c',
+          onConflict: 'override'
+        },
+        androidChrome: {
+          pictureAspect: 'noChange',
+          themeColor: '#ff670f',
+          manifest: {
+            name: 'John Ritterbush',
+            display: 'browser',
+            orientation: 'notSet',
+            onConflict: 'override',
+            declared: true
+          }
+        },
+        safariPinnedTab: {
+          pictureAspect: 'blackAndWhite',
+          threshold: 75,
+          themeColor: '#ff670f'
+        }
+      },
+      settings: {
+        compression: 5,
+        scalingAlgorithm: 'Mitchell',
+        errorOnImageTooSmall: false
+      },
+      markupFile: srcAssets + '/favicon/.faviconData.json'
+    }
   },
   fonts: {
-    src: [ 
-      bowerPath + '/font-awesome/fonts/*',
-      srcAssets + '/fonts/*'
-    ],
-    dest: developmentAssets + '/fonts'
+    development: {
+      src: [ 
+        bowerPath + '/font-awesome/fonts/*',
+        srcAssets + '/fonts/*'
+      ],
+      dest: developmentAssets + '/fonts'
+    },
+    production: {
+      src: developmentAssets + '/fonts',
+      dest: productionAssets + '/fonts'
+    }
   },
   watch: {
     html: [ 
@@ -102,7 +155,8 @@ module.exports = {
     sass: srcAssets + '/scss/**/*.{sass,scss}',
     scripts: srcAssets + '/js/**/*.js',
     images: srcAssets + '/images/**/*',
-    fonts: srcAssets + '/fonts/*'
+    fonts: srcAssets + '/fonts/*',
+    favicon: srcAssets + '/favicon/JohnRitterbush-favicon.png'
   },
   optimize: {
     css: {
@@ -125,7 +179,7 @@ module.exports = {
       }
     },
     html: {
-      src: development + '/**/*.html',
+      src: development + '/*.html',
       dest: production,
       options: {
         collapseWhitespace: true

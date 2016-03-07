@@ -6,7 +6,7 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync'),
     plumber     = require('gulp-plumber');
 
-gulp.task('jade', function() {
+gulp.task('jade', ['jsonlint'], function() {
   browserSync.notify('Compiling Jade');
 
   return gulp.src(config.src)

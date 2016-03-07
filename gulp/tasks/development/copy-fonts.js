@@ -1,9 +1,7 @@
-var config = require('../../config').fonts;
+var config = require('../../config').fonts.development;
 
 var gulp   = require('gulp'),
     util   = require('gulp-util');
-
-util.log(config);
 
 gulp.task('copy:fonts', function() {
   return gulp.src(config.src)

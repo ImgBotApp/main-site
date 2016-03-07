@@ -5,22 +5,27 @@ var gulp        = require('gulp'),
 gulp.task('build:production', function(callback) {
   runSequence(
     'delete',
-    'html',
-    [
-      'sass',
-      // 'scripts',
+    'jade',
+    'sass',
+    'scripts',
+    [ 
       'images',
-      'copy:fonts'
+      'copy:fonts' 
+    ],
+    [ 
+      'generateFavicon',
+      'injectFaviconMarkups'
     ],
     [
       'optimize:css',
       'optimize:js',
       'optimize:images',
       'optimize:html',
-      'copy:fonts:production'
+      'copy:fonts:production',
+      'copy:favicons:production'
     ],
-    'revision',
-    'rev:collect',
+    // 'revision',
+    // 'rev:collect',
     callback
   );
 });
