@@ -7,7 +7,7 @@ var src = 'src',
     srcAssets = src + '/_assets',
     developmentAssets = development + '/assets',
     productionAssets = production + '/assets',
-    bowerPath = srcAssets + '/_bower_components';
+    bowerPath = src + '/_bower_components';
 
 module.exports = {
   browserSync: {
@@ -58,9 +58,15 @@ module.exports = {
       outputStyle: 'expanded',
       errLogToConsole: true,
       includePaths: [
-        bowerPath + '/bootstrap-sass/assets/stylesheets/**/*.scss',
-        bowerPath + '/font-awesome/scss/**/*.scss'
+        bowerPath + '/bootstrap-sass/assets/stylesheets',
+        bowerPath + '/font-awesome/scss'
       ]
+    }
+  },
+  sourcemaps: {
+    options: {
+      includeContent: false,
+      sourceRoot: srcAssets + '/scss'
     }
   },
   autoprefixer: {
@@ -74,29 +80,29 @@ module.exports = {
     src: src + '/js/**/*.js'
   },
   images: {
-    src: src + '/images/**/*',
-    dest: development + '/images'
+    src: srcAssets + '/images/**/*',
+    dest: developmentAssets + '/images'
   },
   favicon: {
     src: src + '/favicon/*-favicon.png',
     file: src + '/favicon/.faviconData.json'
   },
   fonts: {
-    development: {
-      src: srcAssets + '/fonts/*',
-      dest: developmentAssets + '/fonts'
-    },
-    production: {
-      src: developmentAssets + '/fonts/*',
-      dest: productionAssets + '/fonts'
-    }
+    src: [ 
+      bowerPath + '/font-awesome/fonts/*',
+      srcAssets + '/fonts/*'
+    ],
+    dest: developmentAssets + '/fonts'
   },
   watch: {
-    html: src + '/**/*.html',
-    sass: src + '/scss/**/*.{sass,scss}',
-    scripts: src + '/js/**/*.js',
-    images: src + '/images/**/*',
-    fonts: src + '/fonts/*'
+    html: [ 
+      src + '/_templates/**/*.jade',
+      srcAssets + '/data/**/*.json'
+    ],
+    sass: srcAssets + '/scss/**/*.{sass,scss}',
+    scripts: srcAssets + '/js/**/*.js',
+    images: srcAssets + '/images/**/*',
+    fonts: srcAssets + '/fonts/*'
   },
   optimize: {
     css: {

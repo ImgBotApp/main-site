@@ -6,30 +6,32 @@ var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
     filter       = require('gulp-filter'),
     autoprefixer = require('gulp-autoprefixer'),
-    sourcemaps   = require('gulp-sourcemaps');
+    sourcemaps   = require('gulp-sourcemaps'),
+    util         = require('gulp-util');
+
+
+function onError(err) {
+  util.beep();
+  console.log(err);
+  this.emit('end');
+}
 
 gulp.task('sass', function() {
-  // var sassConfig = config.sass.options;
-  // sassConfig.onError = browserSync.notify;
+  var sassConfig = config.sass.options;
+  sassConfig.onError = browserSync.notify;
 
-  // var sassFilter = filter(['*.css', '!*.map'], { restore: true });
+  var sassFilter = filter(['*.css', '!*.map'], { restore: true });
 
-  // browserSync.notify('Compiling Sass');
-
-  // return sass(config.sass.src, sassConfig)
-    // .pipe(plumber())
-    // .pipe(sourcemaps.init())
-    // .pipe(autoprefixer(config.autoprefixer))
-    // .pipe(sassFilter)
-    // .pipe(sourcemaps.write('.', { 
-    //   includeContent: false, 
-    //   sourceRoot: 'src/_assets/scss' 
-    // }))
-    // .pipe(filter.restore)
-    // .pipe(gulp.dest(config.sass.dest));
+  browserSync.notify('Compiling Sass');
 
   return gulp.src(config.sass.src)
-    .pipe(sass(config.sass.options))
+    .pipe(plumber({
+      errorHandler: onError 
+    }))
+    .pipe(sourcemaps.init())
+    .pipe(sass(config.sass.options).on('error', sass.logError))
+    .pipe(autoprefixer(config.autoprefixer))
+    .pipe(sourcemaps.write('.', config.sourcemaps.options))
     .pipe(gulp.dest(config.sass.dest));
 
 });

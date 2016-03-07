@@ -9,7 +9,9 @@
             h4= item.title 
             p= item.summary 
               if item.link
+                = ' '
                 a(href="#{item.link.url}")  #{item.link.text}
+                  = ' '
                   i.fa.fa-chevron-right
             
             p.tags

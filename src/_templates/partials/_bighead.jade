@@ -1,4 +1,4 @@
-section#bighead
+section#bighead.bighead
   .navbar-wrapper
     .navbar.navbar-default
       .navbar-header
@@ -14,7 +14,7 @@ section#bighead
           each section, index in sections
             if section.in_nav
               li
-                a(href="##{index}")= section.name 
+                a(href="##{index}")= section.title
 
   .title-top
     h1=author 

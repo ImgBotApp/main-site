@@ -5,13 +5,10 @@ gulp.task('build', function(callback) {
   runSequence(
     'bower',
     'delete',
-    [
-      'jade',
-      'sass',
-      // 'scripts',
-      'images',
-      'copy:fonts'
-    ],
+    'jade',
+    [ 'sass', 'sassLint' ],
+    // [ 'scripts' ],
+    [  'images', 'copy:fonts' ],
     callback
   );
 });

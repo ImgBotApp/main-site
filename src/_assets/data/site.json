@@ -10,7 +10,7 @@
   "sections": { 
 
     "projects": {
-      "name": "Projects",
+      "title": "Projects",
       "altTitle": "Featured Projects",
       "in_nav": true ,
       "items": [
@@ -26,7 +26,7 @@
           "link": {
             "url": "https://github.com/jritterbush/main-site",
             "title": "Leaving johnritterbush.com for github.com",
-            "text": "View the GitHub repository" 
+            "text": "View the GitHub repository " 
           },
           "tags": [ "HTML/CSS", "SCSS", "JavaScript", "jQuery", "Bootstrap", "Ansible", "Vagrant", "Gulp", "Git", "Node", "Bower" ],
           "image": {
@@ -159,7 +159,7 @@
     },
 
     "skills": {
-      "name": "Skills",
+      "title": "Skills",
       "in_nav": true,
       "items": [
 
@@ -216,7 +216,7 @@
     },
 
     "experience": {
-      "name": "Experience",
+      "title": "Experience",
       "in_nav": false,
       "jobs": [
 
@@ -252,7 +252,7 @@
     },
 
     "about": {
-      "name": "About",
+      "title": "About",
       "in_nav": true,
       "summary": [
         "I am a self-taught web developer with a background in art and art history. On paper those things seem disconnected, but the knowledge I gained in both practices have been critical in my development. My interest in art and education led me to volunteer my time to improve the website of a local arts center. In return, that experience led me to pursue web development, a career I have found equal fulfillment in.",
@@ -279,7 +279,7 @@
     },
 
     "contact": {
-      "name": "Contact",
+      "title": "Contact Me",
       "in_nav": true
     }
   },

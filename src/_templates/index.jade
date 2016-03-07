@@ -25,18 +25,18 @@ html(lang="en", itemscope, itemtype="http://schema.org/WebPage")
       type='text/css'
     )
 
-    // build:css css/main.min.css
+    //- build:css css/main.min.css
+    //- link(
+    //-   href="bower_components/animate.css/animate.css"
+    //-   rel='stylesheet'
+    //-   type='text/css'
+    //- )
     link(
-      href="bower_components/animate.css/animate.css"
+      href="assets/css/main.css"
       rel='stylesheet'
       type='text/css'
     )
-    link(
-      href="css/main.css"
-      rel='stylesheet'
-      type='text/css'
-    )
-    // endbuild
+    //- endbuild
 
   body
     include ./partials/_gtm.jade
