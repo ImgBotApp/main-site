@@ -9,7 +9,7 @@ The basic building blocks for my site. This doc needs work and testing but this 
 
 ## Build
 
-1. Copy the `example.config.json` to `config.json` and add in your [TinyPNG – Developer API](https://tinypng.com/developers) key.
+1. Copy the `gulp/example.safe-words.json` to `gulp/safe-words.json` and add in your [TinyPNG – Developer API](https://tinypng.com/developers) key.
 
 2. Load dev dependencies 
 

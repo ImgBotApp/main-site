@@ -221,9 +221,16 @@
       "jobs": [
 
         {
+          "company": "Sprout Social",
+          "title": "Marketing Developer",
+          "dates": "April 2016&ndash;present",
+          "summary": ""
+        },
+
+        {
           "company": "The Art Institute of Chicago",
           "title": "Web Architect",
-          "dates": "October 2013&ndash;present",
+          "dates": "October 2013&ndash;April 2016",
           "summary": "In the digital marketing department, I serve as web architect. In that role, I have improved revenue tracking across three separate sales channels in Google Analytics, brought our Drupal development in-house saving money and time, converted email campaigns to responsive templates, and developed promotional sites for marketing campaigns."
         },
 
